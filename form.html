@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+  <form action="" id="myform">
+ <!--     <input type="text" id="test" onchange="go()">-->
+<!--  onchange="",onblur="",onfocus="",onclick=""皆為執行"值"的指示，擇一出現-->
+     <input type="text" id="test">
+     <select name="" id="test2">
+        <option value="aaa">aaa</option>
+        <option value="台北市">bbb</option>
+        <option value="ccc">ccc</option> 
+        <option value="ddd">ddd</option>
+        </select>
+     <input type="submit" id="送出">
+  </form>
+  <div id="output"></div>
+  <script>
+     var t=myform.test2.options[1].value;
+      console.log(t); 
+//     var t2=myform.test2.options[1].textContent;
+//     console.log(t2);  
+   function go(){
+       var test = document.getElementById("test").value;
+       /*接收空白列輸入的資訊*/   
+       console.log(test);
+       document.getElementById("output").testContent=test; 
+      /*將資料顯示在螢幕上*/   
+   }
+    </script>  
+</body>
+</html>
